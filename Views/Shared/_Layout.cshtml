@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<!--
+Author: Keenthemes
+Product Name: Metronic - Bootstrap 5 HTML, VueJS, React, Angular & Laravel Admin Dashboard Theme
+Purchase: https://1.envato.market/EA4JP
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html direction="rtl" dir="rtl" style="direction: rtl">
+<!--begin::Head-->
+<head>
+
+    <base href="">
+    <title>نظام إدارة طلبات التوظيف</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
+    <meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular &amp; Laravel Admin Dashboard Theme" />
+    <meta property="og:url" content="https://keenthemes.com/metronic" />
+    <meta property="og:site_name" content="Keenthemes | Metronic" />
+    <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
+    <link rel="shortcut icon" href="~/assets/media/logos/favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <link href="~/assets/plugins/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/plugins/global/plugins.bundle.rtl.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/plugins/bootstrap-hijridate-v1.0.1/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/style.bundle.rtl.css" rel="stylesheet" type="text/css" />
+    @*<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />*@
+
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
+    <!--begin::Main-->
+    <!--begin::Root-->
+    <div class="d-flex flex-column flex-root">
+        <!--begin::Page-->
+        <div class="page d-flex flex-row flex-column-fluid">
+            <!--begin::Wrapper-->
+            <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+                <!--begin::Header-->
+                <div id="kt_header" class="header align-items-stretch" data-kt-sticky="true" data-kt-sticky-name="header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+                    <!--begin::Container-->
+                    <div class="container-fluid d-flex align-items-center customizedHeader">
+                        <!--begin::Heaeder menu toggle-->
+                        <div class="d-flex topbar align-items-center d-lg-none ms-n2 me-3" title="Show aside menu">
+                            <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px" id="kt_header_menu_mobile_toggle">
+                                <!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
+                                <span class="svg-icon svg-icon-2x">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="black" />
+                                        <path opacity="0.3" d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z" fill="black" />
+                                    </svg>
+                                </span>
+                                <!--end::Svg Icon-->
+                            </div>
+                        </div>
+                        <!--end::Heaeder menu toggle-->
+                        <!--begin::Header Logo-->
+                        <div class="header-logo me-5 me-md-10 flex-grow-1 flex-lg-grow-0">
+                            <a href="@(Url.Action("Index","Home"))">
+                                <img alt="Logo" src="/Assets/media/vacImages/logo.png" class="logo-default h-45px" />
+                                <img alt="Logo" src="/Assets/media/vacImages/logo.png" class="logo-sticky h-45px" />
+                            </a>
+                        </div>
+                        <!--end::Header Logo-->
+                        <!--begin::Wrapper-->
+                        <div class="d-flex align-items-stretch justify-content-center flex-lg-grow-1">
+                            <!--begin::Navbar-->
+                            <div class="d-flex align-items-stretch" id="kt_header_nav">
+                                <!--begin::Menu wrapper-->
+                                <div class="header-menu align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_header_menu_mobile_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}">
+                                    <!--begin::Menu-->
+                                    <div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
+                                        @if (User.IsInRole("NormalUser"))
+                                        {
+                                        <div class="menu-item here show menu-lg-down-accordion me-lg-1">
+
+                                            <a class="menu-link active py-3" href="@(Url.Action("Index","HRVacancy"))">
+                                                <span class="menu-icon">
+                                                    <!--begin::Svg Icon | path: /icons/duotune/general/gen002.svg-->
+                                                    <span class="svg-icon svg-icon-2">
+                                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 488.8 488.8" style="enable-background:new 0 0 488.8 488.8;" xml:space="preserve">
+
+                                                        <path style="fill:#fff;" d="M488.8,383V9.9c0-5.5-4.4-9.9-9.9-9.9H105.8c-5.5,0-9.9,4.4-9.9,9.9V383c0,5.5,4.4,9.9,9.9,9.9
+			                                                    h373.1C484.4,392.9,488.8,388.5,488.8,383z M469,373.1H115.7V19.8H469V373.1L469,373.1z" />
+                                                        <path style="fill:#fff;" d="M9.9,488.8H383c5.5,0,9.9-4.4,9.9-9.9s-4.4-9.9-9.9-9.9H19.8V105.8c0-5.5-4.4-9.9-9.9-9.9
+			                                                    S0,100.3,0,105.8v373.1C0,484.4,4.4,488.8,9.9,488.8z" />
+                                                        <path style="fill:#fff;" d="M211.8,206.3h70.7V277c0,5.5,4.4,9.9,9.9,9.9s9.9-4.4,9.9-9.9v-70.7H373c5.5,0,9.9-4.4,9.9-9.9
+			                                                    s-4.4-9.9-9.9-9.9h-70.7v-70.7c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9v70.7h-70.7c-5.5,0-9.9,4.4-9.9,9.9
+			                                                    S206.3,206.3,211.8,206.3z" />
+                                                               </svg>
+
+                                                    </span>
+                                                </span>
+                                                <!--end::Svg Icon-->
+                                                <span class="menu-title">الوظائف الشاغرة</span>
+
+                                            </a>
+
+                                        </div>
+                                        }
+                                        <div class="menu-item menu-lg-down-accordion me-lg-1">
+                                            <a class="menu-link  py-3" href="@(Url.Action("Index","HRRequisition"))">
+                                                <span class="menu-icon">
+                                                    <!--begin::Svg Icon | path: /icons/duotune/general/gen002.svg-->
+                                                    <span class="svg-icon svg-icon-2">
+                                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 494.907 494.907" style="enable-background:new 0 0 494.907 494.907;" xml:space="preserve">
+                                                        <g>
+                                                        <path style="fill:#fff;" d="M70.571,459.196c-6.131,0-11.114-4.983-11.114-11.106V105.993c0-6.123,4.983-11.104,11.114-11.104H308.28
+		                                                            c6.131,0,11.115,4.98,11.115,11.104v147.911c10.565-3.519,21.644-5.855,33.132-6.844V105.993c0-24.396-19.849-44.236-44.247-44.236
+		                                                            H121.157V44.236c0-6.124,4.982-11.104,11.113-11.104h237.711c6.13,0,11.113,4.98,11.113,11.104V247.36
+		                                                            c11.517,1.279,22.586,4.013,33.131,7.839V44.236C414.225,19.841,394.378,0,369.981,0H132.27c-24.397,0-44.245,19.841-44.245,44.236
+		                                                            v17.521H70.571c-24.397,0-44.246,19.841-44.246,44.236V448.09c0,24.395,19.849,44.238,44.246,44.238h190.666
+		                                                            c-9.543-9.811-17.714-20.943-24.203-33.132H70.571z" />
+                                                        <path style="fill:#fff;" d="M126.913,190.86h95.61c9.158,0,16.565-7.418,16.565-16.565c0-9.149-7.407-16.566-16.565-16.566h-95.61
+		                                                            c-9.153,0-16.561,7.418-16.561,16.566C110.352,183.442,117.759,190.86,126.913,190.86z" />
+                                                        <path style="fill:#fff;" d="M268.514,247.846c0-9.148-7.407-16.566-16.566-16.566H126.913c-9.153,0-16.561,7.418-16.561,16.566
+		                                                            c0,9.149,7.407,16.566,16.561,16.566h125.035C261.107,264.412,268.514,256.995,268.514,247.846z" />
+                                                        <path style="fill:#fff;" d="M249.055,304.808H126.913c-9.153,0-16.561,7.417-16.561,16.565c0,9.148,7.407,16.566,16.561,16.566h103.521
+		                                                            C235.172,326.022,241.483,314.926,249.055,304.808z" />
+                                                        <path style="fill:#fff;" d="M126.913,378.342c-9.153,0-16.561,7.418-16.561,16.565c0,9.148,7.407,16.566,16.561,16.566h94.737
+		                                                            c-0.907-6.584-1.552-13.267-1.552-20.103c0-4.4,0.274-8.728,0.664-13.029H126.913z" />
+                                                        <path style="fill:#fff;" d="M365.047,357.148c-28.438,0-53.614,23.563-63.545,34.223c9.931,10.655,35.107,34.209,63.545,34.209
+		                                                            c28.553,0,53.658-23.547,63.545-34.199C418.675,380.728,393.504,357.148,365.047,357.148z M365.047,416.22
+		                                                            c-13.718,0-24.846-11.128-24.846-24.849c0-13.732,11.128-24.847,24.846-24.847s24.846,11.114,24.846,24.847
+		                                                            C389.893,405.092,378.765,416.22,365.047,416.22z" />
+                                                        <path style="fill:#fff;" d="M365.047,287.837c-57.186,0-103.536,46.349-103.536,103.534c0,57.173,46.35,103.536,103.536,103.536
+		                                                            c57.186,0,103.535-46.363,103.535-103.536C468.582,334.185,422.233,287.837,365.047,287.837z M365.047,442.143
+		                                                            c-44.681,0-79.594-43.791-81.064-45.652c-2.345-3.008-2.345-7.23,0-10.23c1.471-1.868,36.384-45.678,81.064-45.678
+		                                                            c44.679,0,79.592,43.809,81.064,45.678c2.345,3,2.345,7.223,0,10.23C444.639,398.353,409.726,442.143,365.047,442.143z" />
+
+                                                            </svg>
+
+
+                                                    </span>
+                                                </span>
+                                                <!--end::Svg Icon-->
+                                                <span class="menu-title">طلبات الموارد البشرية</span>
+
+                                                <span class="position-relative">
+                                                    <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" style="top: -24px;">
+                                                        12
+                                                    </span>
+                                                </span>
+                                            </a>
+
+                                        </div>
+
+                                        <div class="menu-item menu-lg-down-accordion me-lg-1">
+                                            <a class="menu-link  py-3" href="@(Url.Action("Index","Candidate"))">
+                                                <span class="menu-icon">
+                                                    <!--begin::Svg Icon | path: /icons/duotune/general/gen002.svg-->
+                                                    <span class="svg-icon svg-icon-2">
+                                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 494.907 494.907" style="enable-background:new 0 0 494.907 494.907;" xml:space="preserve">
+                                                        <g>
+                                                        <path style="fill:#fff;" d="M70.571,459.196c-6.131,0-11.114-4.983-11.114-11.106V105.993c0-6.123,4.983-11.104,11.114-11.104H308.28
+		                                                            c6.131,0,11.115,4.98,11.115,11.104v147.911c10.565-3.519,21.644-5.855,33.132-6.844V105.993c0-24.396-19.849-44.236-44.247-44.236
+		                                                            H121.157V44.236c0-6.124,4.982-11.104,11.113-11.104h237.711c6.13,0,11.113,4.98,11.113,11.104V247.36
+		                                                            c11.517,1.279,22.586,4.013,33.131,7.839V44.236C414.225,19.841,394.378,0,369.981,0H132.27c-24.397,0-44.245,19.841-44.245,44.236
+		                                                            v17.521H70.571c-24.397,0-44.246,19.841-44.246,44.236V448.09c0,24.395,19.849,44.238,44.246,44.238h190.666
+		                                                            c-9.543-9.811-17.714-20.943-24.203-33.132H70.571z" />
+                                                        <path style="fill:#fff;" d="M126.913,190.86h95.61c9.158,0,16.565-7.418,16.565-16.565c0-9.149-7.407-16.566-16.565-16.566h-95.61
+		                                                            c-9.153,0-16.561,7.418-16.561,16.566C110.352,183.442,117.759,190.86,126.913,190.86z" />
+                                                        <path style="fill:#fff;" d="M268.514,247.846c0-9.148-7.407-16.566-16.566-16.566H126.913c-9.153,0-16.561,7.418-16.561,16.566
+		                                                            c0,9.149,7.407,16.566,16.561,16.566h125.035C261.107,264.412,268.514,256.995,268.514,247.846z" />
+                                                        <path style="fill:#fff;" d="M249.055,304.808H126.913c-9.153,0-16.561,7.417-16.561,16.565c0,9.148,7.407,16.566,16.561,16.566h103.521
+		                                                            C235.172,326.022,241.483,314.926,249.055,304.808z" />
+                                                        <path style="fill:#fff;" d="M126.913,378.342c-9.153,0-16.561,7.418-16.561,16.565c0,9.148,7.407,16.566,16.561,16.566h94.737
+		                                                            c-0.907-6.584-1.552-13.267-1.552-20.103c0-4.4,0.274-8.728,0.664-13.029H126.913z" />
+                                                        <path style="fill:#fff;" d="M365.047,357.148c-28.438,0-53.614,23.563-63.545,34.223c9.931,10.655,35.107,34.209,63.545,34.209
+		                                                            c28.553,0,53.658-23.547,63.545-34.199C418.675,380.728,393.504,357.148,365.047,357.148z M365.047,416.22
+		                                                            c-13.718,0-24.846-11.128-24.846-24.849c0-13.732,11.128-24.847,24.846-24.847s24.846,11.114,24.846,24.847
+		                                                            C389.893,405.092,378.765,416.22,365.047,416.22z" />
+                                                        <path style="fill:#fff;" d="M365.047,287.837c-57.186,0-103.536,46.349-103.536,103.534c0,57.173,46.35,103.536,103.536,103.536
+		                                                            c57.186,0,103.535-46.363,103.535-103.536C468.582,334.185,422.233,287.837,365.047,287.837z M365.047,442.143
+		                                                            c-44.681,0-79.594-43.791-81.064-45.652c-2.345-3.008-2.345-7.23,0-10.23c1.471-1.868,36.384-45.678,81.064-45.678
+		                                                            c44.679,0,79.592,43.809,81.064,45.678c2.345,3,2.345,7.223,0,10.23C444.639,398.353,409.726,442.143,365.047,442.143z" />
+
+                                                            </svg>
+
+
+                                                    </span>
+                                                </span>
+                                                <!--end::Svg Icon-->
+                                                <span class="menu-title">المرشحين</span>
+
+                                                <span class="position-relative">
+                                                    <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" style="top: -24px;">
+                                                       5
+                                                    </span>
+                                                </span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                    <!--end::Menu-->
+                                </div>
+                                <!--end::Menu wrapper-->
+                            </div>
+                            <!--end::Navbar-->
+
+                        </div>
+                        <!--end::Wrapper-->
+                    </div>
+                    <!--end::Container-->
+                </div>
+                <!--end::Header-->
+                <!--begin::Toolbar-->
+                <!--end::Toolbar-->
+                <!--begin::Container-->
+                <div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-xxl">
+                    <!--begin::Post-->
+                    <div class="content flex-row-fluid" id="kt_content">
+                        @RenderBody()
+                    </div>
+                    <!--end::Post-->
+                </div>
+                <!--end::Container-->
+                <!--begin::Footer-->
+                <div class="footer d-flex flex-lg-column" id="kt_footer">
+                    <!--begin::Container-->
+                    <div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-center customized-Footer">
+                        <!--begin::Copyright-->
+                        <div class="text-dark order-2 order-md-1">
+                            <span class="text-white fw-bold me-1">@DateTime.Now.Year</span>
+                            <a href="https://keenthemes.com" target="_blank" class="text-white text-hover-primary">النبراس مرتضى أحمد</a>
+                        </div>
+                        <!--end::Copyright-->
+
+                    </div>
+                    <!--end::Container-->
+                </div>
+                <!--end::Footer-->
+            </div>
+            <!--end::Wrapper-->
+        </div>
+        <!--end::Page-->
+    </div>
+    <!--end::Root-->
+    <!--begin::Drawers-->
+    <!--begin::Scrolltop-->
+    <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+        <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
+        <span class="svg-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="black" />
+                <path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="black" />
+            </svg>
+        </span>
+        <!--end::Svg Icon-->
+    </div>
+    <!--end::Scrolltop-->
+    <!--end::Main-->
+    <script>var hostUrl = "~/assets/";</script>
+    <!--begin::Javascript-->
+    <!--begin::Global Javascript Bundle(used by all pages)-->
+
+    <script src="~/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="~/assets/js/scripts.bundle.js"></script>
+    @*<script src="~/assets/js/custom/modals/create-account.js"></script>*@
+
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Page Vendors Javascript(used by this page)-->
+    <script src="~/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+    <!--end::Page Vendors Javascript-->
+    <!--begin::Page Custom Javascript(used by this page)-->
+    <script src="~/assets/js/custom/widgets.js"></script>
+    <script src="~/assets/js/custom/apps/chat/chat.js"></script>
+    <script src="~/assets/js/custom/modals/create-app.js"></script>
+    <script src="~/assets/js/custom/modals/upgrade-plan.js"></script>
+    <script src="~/assets/plugins/bootstrap-hijridate-v1.0.1/js/bootstrap-hijri-datetimepicker.min.js"></script>
+    <script src="~/assets/js/jquery.selectric.min.js"></script>
+    @*<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>*@
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+<!--end::Body-->
+
+
+</html>
